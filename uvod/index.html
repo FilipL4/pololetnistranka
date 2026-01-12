@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvod - Programy a data</title>
+    <link rel="stylesheet" href="..\css\style.css">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: bisque;
+        }
+
+        .container div {
+            background-color: white;
+            border: 1px solid gray;
+            margin: 10px;
+            padding: 10px;
+            width: 28%;
+        }
+
+        @media (max-width: 960px) {
+        .container {
+            flex-direction: row;
+            background-color: turquoise;
+        }
+        .container div {
+            width: 45%;
+        }
+        }
+
+        @media (max-width: 600px) {
+        .container {
+            flex-direction: column;
+            background-color: green;
+        }
+        .container div {
+            width: auto;
+        }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Úvod - Programy a data</h1>
+    </header>
+    <main class="container">
+        <div>
+            <h3><a href="..\a\index.html">A - Programové a datové soubory</a></h3>
+            <ul>
+                <li><a href="">Podnadpis 1</a></li>
+                <li><a href="">Podnadpis 2</a></li>
+                <li><a href="">Podnadpis 3</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3><a href="">Nadpis 2</a></h3>
+            <ul>
+                <li><a href="">Podnadpis 1</a></li>
+                <li><a href="">Podnadpis 2</a></li>
+                <li><a href="">Podnadpis 3</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3><a href="">Nadpis 3</a></h3>
+            <ul>
+                <li><a href="">Podnadpis 1</a></li>
+                <li><a href="">Podnadpis 2</a></li>
+                <li><a href="">Podnadpis 3</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3><a href="">Nadpis 4</a></h3>
+            <ul>
+                <li><a href="">Podnadpis 1</a></li>
+                <li><a href="">Podnadpis 2</a></li>
+                <li><a href="">Podnadpis 3</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3><a href="">Nadpis 5</a></h3>
+            <ul>
+                <li><a href="">Podnadpis 1</a></li>
+                <li><a href="">Podnadpis 2</a></li>
+                <li><a href="">Podnadpis 3</a></li>
+            </ul>
+        </div>
+        <div>
+            <h3><a href="..\f\index.html">F - Softwarové licence</a></h3>
+            <ul>
+                <li><a href="..\f\index.html#komercni-software">Komerční software</a></li>
+                <li><a href="..\f\index.html#svobodny-software">Svobodný software</a></li>
+                <li><a href="..\f\index.html#prehled-licenci">Přehled licencí</a></li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        Šílené zápatí
+    </footer>
+</body>
+</html>
