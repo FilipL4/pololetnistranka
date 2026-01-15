@@ -10,7 +10,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-evenly;
+            justify-content: center;
             background-color: bisque;
         }
 
@@ -25,7 +25,6 @@
         @media (max-width: 960px) {
         .container {
             flex-direction: row;
-            background-color: turquoise;
         }
         .container div {
             width: 45%;
@@ -35,30 +34,40 @@
         @media (max-width: 600px) {
         .container {
             flex-direction: column;
-            background-color: green;
         }
         .container div {
             width: auto;
         }
         }
-
     </style>
 </head>
 <body>
     <header>
         <h1>Úvod - Programy a data</h1>
+        <div class="topnav" id="myTopnav">
+        <a href="..\uvod\index.html" class="active">Úvod</a>
+        <a href="..\a\index.html">Programové a datové soubory</a>
+        <a href="..\b\index.html">Operační systémy</a>
+        <a href="..\c\index.html">Ovladače, firmware a utility</a>
+        <a href="..\d\index.html">Aplikační software</a>
+        <a href="..\e\index.html">Instalace programů</a>
+        <a href="..\f\index.html">Softwarové licence</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+  </div>
     </header>
     <main class="container">
         <div>
             <h3><a href="..\a\index.html">A - Programové a datové soubory</a></h3>
             <ul>
-                <li><a href="">Podnadpis 1</a></li>
-                <li><a href="">Podnadpis 2</a></li>
-                <li><a href="">Podnadpis 3</a></li>
+                <li><a href="..\a\index.html#soubory">Soubory</a></li>
+                <li><a href="..\a\index.html#adresare">Adresáře</a></li>
+                <li><a href="..\a\index.html#cesta-zastupne-znaky">Cesta a zástupné znaky</a></li>
             </ul>
         </div>
         <div>
-            <h3><a href="">Nadpis 2</a></h3>
+            <h3><a href="">B - Operační systémy/a></h3>
             <ul>
                 <li><a href="">Podnadpis 1</a></li>
                 <li><a href="">Podnadpis 2</a></li>
@@ -98,8 +107,22 @@
             </ul>
         </div>
     </main>
-    <footer>
-        Šílené zápatí
-    </footer>
+  <footer>
+    <hr>
+    <p>&copy; Copyright 2026, Filip Vícha, IT1</p>
+    <div>
+      <img src="https://www.sspu-opava.cz/static/img/core-img/skola-logo.png" alt="Školní logo, SŠPÚ">
+    </div>
+  </footer>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
