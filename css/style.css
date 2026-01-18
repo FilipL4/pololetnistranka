@@ -13,18 +13,18 @@ main {
     margin: auto;
 }
 
-#vlastnosti-souboru img {
+.obrazek img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 25%;
 }
 
-#operacni-system img {
+#cmd img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 75%;
 }
 
 .prvni-strana main {
