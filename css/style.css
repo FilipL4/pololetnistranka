@@ -34,6 +34,13 @@ main {
     width: 50%;
 }
 
+#wizard img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
 .prvni-strana main {
     margin-bottom: 100px;
 }

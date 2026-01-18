@@ -29,10 +29,10 @@
       <p>
         Program, který si koupíme, dostaneme na CD/DVD disku, nebo si ho
         stáhneme z Internetu. Po vložení instalačního CD/DVD disku se většinou
-        okamžitě spustí instalační program (díky souboru autorun.inf), v případě
+        okamžitě spustí instalační program (díky souboru <i>autorun.inf</i>), v případě
         softwaru staženého z Internetu musíme instalační program spustit sami
-        (ve Windows nejčastěji poklepáním na soubory install.exe či setup.exe).
-        Průvodce instalací (wizzard) si často vyžádá sériové číslo a souhlas s
+        (ve Windows nejčastěji poklepáním na soubory <i>install.exe</i> či <i>setup.exe</i>).
+        Průvodce instalací (<i><a href="https://en.wikipedia.org/wiki/Wizard_(software)" target="_blank">wizard</a></i>) si často vyžádá sériové číslo a souhlas s
         licenčními podmínkami, zeptá se, kam (do jaké složky na disku) se má
         program uložit a kam se má umístit zástupce programu, případně žádá
         další informace. Potom instalační program nahraje všechny soubory, ze
@@ -41,17 +41,20 @@
         nakonec vytvoří zástupce programu pro jeho snadné spuštění. K instalaci
         většiny programů je nutné mít práva správce.
       </p>
+      <div class="obrazek" id="wizard">
+        <img src="../img/network-wizard.jpg" alt="Wizard setup">
+      </div>
       <h3>Odinstalace programu</h3>
       <p>
         Úplné odebrání programu bývá paradoxně často složitější, zvláště v
         systémech Windows. Při instalaci si program nahraje své komponenty do
         mnoha složek včetně systémových, sdílí některé soubory s jinými programy
-        (dynamické knihovny DLL), vytvoří záznamy v tzv. registru, při svém běhu
+        (<a href="https://cs.wikipedia.org/wiki/DLL" target="_blank">dynamické knihovny DLL</a>), vytvoří záznamy v tzv. registru, při svém běhu
         vytváří pomocné soubory. Program, zajišťující odinstalování aplikace,
         často neví přesně, kde všude jsou programové soubory uložené a všechny
         je nesmaže. V řadě případů tak dochází k hromadění zbytečných a
         nepoužívaných souborů. Pro jejich odstranění lze používat některé
-        speciální utility - např. RegCleaner (program pro čištění registrů). Při
+        speciální utility - např. <i><a href="https://en.wikipedia.org/wiki/Registry_cleaner" target="_blank"></a>RegCleaner</i> (program pro čištění registrů). Při
         podobných operacích je však nutné postupovat velmi obezřetně, aby
         nedošlo k odstranění některé důležité součásti systému nebo používaného
         programu! V linuxových systémech je lépe vyřešeno oddělení systémových a
@@ -73,19 +76,19 @@
       <h2 id="kompatibilita">Platforma a kompatibilita</h2>
       <p>
         V souvislosti s určitým typem OS i typem procesoru používáme pojem
-        platforma - např. Windows, Linux, OS X. Používaný program musí být určen
+        <b>platforma</b> - např. <a href="https://cs.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Windows</a>, <a href="https://cs.wikipedia.org/wiki/Linux" target="_blank">Linux</a>, <a href="https://cs.wikipedia.org/wiki/MacOS" target="_blank">OS X</a>. Používaný program musí být určen
         pro operační systém, který je na počítači nainstalován; pod jiným
-        systémem většinou nepracuje (např. program určený pro MS Windows nebude
-        pracovat pod Linuxem a naopak). Mnoho programů, zvláště z oblasti
-        svobodného software (free software), má proto verze určené pro několik
-        operačních systémů - jsou multiplatformní. Problémy se spuštěním
+        systémem většinou nepracuje (např. program určený pro <a href="https://cs.wikipedia.org/wiki/Microsoft_Windows" target="_blank">MS Windows</a> nebude
+        pracovat pod <a href="https://cs.wikipedia.org/wiki/Linux" target="_blank">Linuxem</a> a naopak). Mnoho programů, zvláště z oblasti
+        svobodného software (<i><a href="../f/index.html#svobodny-software">free software</a></i>), má proto verze určené pro několik
+        operačních systémů - jsou <b>multiplatformní</b>. Problémy se spuštěním
         programu však mohou nastat i na jedné platformě v souvislosti s různými
         verzemi OS i rozdíly mezi 32bitovými a 64bitovými systémy (například
-        nový program určený pro MS Windows může spolehlivě fungovat v novějších
+        nový program určený pro <a href="https://cs.wikipedia.org/wiki/Microsoft_Windows" target="_blank">MS Windows</a> může spolehlivě fungovat v novějších
         verzích Windows, ale nemusí pracovat pod starší verzí stejného OS). Při
-        pořizování programu si proto vždy musíme ověřit, zda je kompatibilní (ve
+        pořizování programu si proto vždy musíme ověřit, zda je <b>kompatibilní</b> (ve
         funkční shodě) s námi používaným operačním systémem. V nových systémech
-        Windows je v případě problémů možné využít nastavení na kartě
+        <a href="https://cs.wikipedia.org/wiki/Microsoft_Windows" target="_blank">Windows</a> je v případě problémů možné využít nastavení na kartě
         Kompatibilita, která je součástí panelu Vlastnosti pro zástupce dané
         aplikace.
       </p>
@@ -94,11 +97,11 @@
         U počítačových programů je důležitá jeho verze, která se označuje číslem
         za názvem programu. Nový program může být například označen jako verze
         1.0. Některé dodatečně zjištěné dílčí nedostatky nebo bezpečnostní
-        problémy řeší aktualizace programu (dnes nejčastěji přes Internet),
-        update. Aktualizace jsou zakázníkům, kteří si zakoupili určitou verzi
+        problémy řeší <i>aktualizace programu</i> (dnes nejčastěji přes Internet),
+        <b>update</b>. Aktualizace jsou zakázníkům, kteří si zakoupili určitou verzi
         programu, obvykle poskytovány bezplatně. Pro přehlednost jsou označovány
         buď datem vydání, nebo symbolickým číselným vyjádřením podverze - např.
-        1.1 nebo 1.23 apod. Povýšení na novou verzi (např. 2.0), upgrade,
+        1.1 nebo 1.23 apod. Povýšení na novou verzi (např. 2.0), <b>upgrade</b>,
         přináší významnější změny ve vývoji programu a v případě komerčního
         software je třeba vyšší verzi znovu zaplatit. Bývá pravidlem, že nové
         verze mají nové funkce a lepší ovládání, ale také vyšší nároky na výkon
@@ -106,21 +109,31 @@
         (případně minimální) konfiguraci počítače, aby bylo možné program na
         daném počítači možné vůbec používat. Opačný postup, tedy použití nižší
         verze programu (např. kvůli nekompatibilitě s instalovaných OS nebo
-        nedostatečnou konfigurací počítače), se nazývá downgrade.
+        nedostatečnou konfigurací počítače), se nazývá <b>downgrade</b>.
       </p>
       <h2 id="registrace">Registrace programu</h2>
       <p>
-        Zaevidování jeho uživatele do databáze výrobce programu. Registrace je
-        nepovinná a přináší většinou několik výhod: • nárok na upgrade programu
-        za sníženou cenu; uživatel se často včas dozví o časově omezených
-        nabídkách výhodného nákupu upgradu nebo dalších programů od stejné
-        firmy; • někteří výrobci programů posílají svým registrovaným uživatelům
-        materiály (časopisy, prospekty), kde se dozvíte zkušenosti jiných
-        uživatelů s programem, bývají zde informace o nových verzích programu,
-        případně o vzniklých doplňcích daného programu; • u některých programů
-        po registraci vzniká nárok na využití zákaznické linky v případě potíží
-        s programem.
+        Je zaevidování jeho uživatele do databáze výrobce programu. Registrace je
+        nepovinná a přináší většinou několik výhod: 
       </p>
+      <ul>
+        <li>
+          nárok na upgrade programu
+          za sníženou cenu; uživatel se často včas dozví o časově omezených
+          nabídkách výhodného nákupu upgradu nebo dalších programů od stejné
+          firmy; 
+        </li>
+        <li>
+          někteří výrobci programů posílají svým registrovaným uživatelům
+          materiály (časopisy, prospekty), kde se dozvíte zkušenosti jiných
+          uživatelů s programem, bývají zde informace o nových verzích programu,
+          případně o vzniklých doplňcích daného programu; </li>
+        <li>
+          u některých programů
+          po registraci vzniká nárok na využití zákaznické linky v případě potíží
+          s programem.
+        </li>
+      </ul>
     </main>
 
     <footer>
