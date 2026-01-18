@@ -5,7 +5,7 @@ body {
 header {
     padding: 20px 0 0 0;
     text-align: center;
-    background-color: rgb(27, 44, 2);
+    background-color: #1b2c02;
 }
 
 main {
@@ -14,7 +14,7 @@ main {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #000000;
     border-collapse: collapse;
 }
 
@@ -23,7 +23,7 @@ th, td {
 }
 
 thead {
-    background-color: #a00;
+    background-color: #aa0000;
     color: white;
 }
 
@@ -55,7 +55,7 @@ p {
 
 .topnav {
 overflow: hidden;
-background-color: #333;
+background-color: #333333;
 }
 
 .topnav a {
@@ -69,7 +69,7 @@ font-size: 17px;
 }
 
 .topnav a:hover {
-background-color: #ddd;
+background-color: #dddddd;
 color: black;
 }
 
