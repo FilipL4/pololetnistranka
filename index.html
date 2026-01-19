@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Úvod - Programy a data</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        background-color: bisque;
+        width: 100%;
+      }
+
+      .container div {
+        background-color: white;
+        border: 1px solid gray;
+        margin: 10px;
+        padding: 10px;
+        width: 28%;
+      }
+
+      @media (max-width: 960px) {
+        .container {
+          flex-direction: row;
+        }
+        .container div {
+          width: 45%;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+        .container div {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <h1 class="nadpis">Úvod - Programy a data</h1>
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html" class="active">Úvod</a>
+        <a href="./a/index.html">Programové a datové soubory</a>
+        <a href="./b/index.html">Operační systémy</a>
+        <a href="./c/index.html">Ovladače, firmware a utility</a>
+        <a href="./d/index.html">Aplikační software</a>
+        <a href="./e/index.html">Instalace programů</a>
+        <a href="./f/index.html">Softwarové licence</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </header>
+
+    <main class="container">
+      <div>
+        <h2><a href="./a/index.html">A - Programové a datové soubory</a></h2>
+        <ul>
+          <li><a href="./a/index.html#soubory">Soubory</a></li>
+          <li><a href="./a/index.html#adresare">Adresáře</a></li>
+          <li><a href="./a/index.html#cesta-zastupne-znaky">Cesta a zástupné znaky</a></li>
+          <li><a href="./a/index.html#program-soubory">Programové soubory</a></li>
+          <li><a href="./a/index.html#data-soubory">Datové soubory</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2><a href="./b/index.html">B - Operační systémy</a></h2>
+        <ul>
+          <li><a href="./b/index.html#software">Software</a></li>
+          <li><a href="./b/index.html#zakladni-vybaveni">Základní programové vybavení</a></li>
+          <li><a href="./b/index.html#vyvoj-systemu">Vývoj operačních systémů</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2><a href="./c/index.html">C - Ovladače, firmware a utility</a></h2>
+        <ul>
+          <li><a href="./c/index.html#ovladace">Ovladače zařízení</a></li>
+          <li><a href="./c/index.html#firmware">Firmware</a></li>
+          <li><a href="./c/index.html#utility">Utility</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2><a href="./d/index.html">D - Aplikační software</a></h2>
+        <ul>
+          <li><a href="./d/index.html#kancelar">Kancelářské balíky</a></li>
+          <li><a href="./d/index.html#grafika">Grafické aplikace</a></li>
+          <li><a href="./d/index.html#multimedia">Multimediální programy</a></li>
+          <li><a href="./d/index.html#pc-sit">Programy pro komunikaci v počítačové síti</a></li>
+          <li><a href="./d/index.html#databaze">Informační a databazové systémy</a></li>
+          <li><a href="./d/index.html#malware">Malware a antivirové programy</a></li>
+          <li><a href="./d/index.html#IDE">Integrovaná vývojová prostředí</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2><a href="./e/index.html">E - Instalace programů</a></h2>
+        <ul>
+          <li><a href="./e/index.html#instal-odinstal">Instalace a odinstalace programu</a></li>
+          <li><a href="./e/index.html#lokalizace">Lokalizace</a></li>
+          <li><a href="./e/index.html#kompatibilita">Platforma a kompatibilita</a></li>
+          <li><a href="./e/index.html#verze">Verze programů</a></li>
+          <li><a href="./e/index.html#registrace">Registrace programu</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2><a href="./f/index.html">F - Softwarové licence</a></h2>
+        <ul>
+          <li><a href="./f/index.html#komercni-software">Komerční software</a></li>
+          <li><a href="./f/index.html#svobodny-software">Svobodný software</a></li>
+          <li><a href="./f/index.html#prehled-licenci">Přehled licencí</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <p>&copy; Copyright 2026, Filip Vícha, IT1</p>
+      <div>
+        <img
+          src="https://www.sspu-opava.cz/static/img/core-img/skola-logo.png"
+          alt="Školní logo, SŠPÚ"
+        />
+      </div>
+    </footer>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+  </body>
+</html>
